@@ -1,11 +1,38 @@
-?php
+<!-- I hope you'll enjoy my inline css skills -->
+<table style="display:inline-block;overflow:hidden;background-color:#ccc;padding:5px;">
+  <tbody>
+    <tr>
+      <td>
+        <h5 style="margin:0;">
+The web server does not respond for this URL
+        </h5>
+      </td>
+    </tr>
 
-require('access.php');
+    <tr>
+      <td style="width:400px;display:block;overflow:hidden;background-color:#eee">
+        <pre>
+404 is an HTTP status code. When you visit a web page, your computer is requesting data from a server using Hypertext Transfer Protocol (HTTP).
 
-if(access["role"] != "admin") {
-  phpinfo();
-}
+Before the web page is displayed, your browser sends the web server its HTTP header. The server responds with its HTTP header, which contains the status code.
 
-http_response_code(404);
-include('404.php');
-die();
+For a normal web page, the status is 200 (OK). You don't see this because the server just sends you the content of the page.
+
+If you encounter an error, then you see the actual status code, such as 404 Not Found.
+
+The first 4 indicates a client error. The server is saying that you've done something wrong, such as misspell the URL or request a page which is no longer there. (For comparison, a 5xx error indicates a server-side problem, which may be transient; if you try it again, it may work.)
+
+The middle 0 refers to a general syntax error. This could indicate a spelling mistake.
+
+The last 4 just indicates the specific error in the 40x group, which also includes 400: Bad Request, 401: Unauthorized, etc. //Source: https://www.urbandictionary.com/define.php?term=404
+        </pre>
+      </td>
+    </tr>
+    <tr>
+      <td style="width:400px;display:flex;flex-direction:row;justify-content:flex-end;">
+        <button style="float:right">Send Error Report</button>
+        <button style="float:right" >Don't Send</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
