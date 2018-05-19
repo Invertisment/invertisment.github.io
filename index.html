@@ -1,12 +1,24 @@
 <html>
   <head>
-    <script type="text/javascript">
-      //window.location = "https://www.mmaciul.lt";
-    </script>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- For search engines -->
-    <!--link rel="canonical" href="https://www.mmaciul.lt/"-->
+    <link rel="canonical" href="https://www.mmaciul.lt/">
+    <meta charset="UTF-8">
   </head>
-  <body background-color="#1c3261">
-    it works
+  <body>
+    <section class="flex flex--column flex--space-between flex--whole-container">
+      <section class="flex flex--column flex--align-center">
+        <h2>Martynas Maciulevičius</h2>
+        <p class="paragraph">Developer &middot; Blockchain enthusiast</p>
+        <div class="flex" id="data-container"></div>
+      </section>
+      <section class="flex flex--row flex--align-center margin-xs">
+        <a href="http://vanilla-js.com/" target="_blank">
+          <img src="img/vanillajs.png"/>
+        </a>
+      </section>
+    </section>
+    <script type="text/javascript" src="js/populate-data.js"></script>
   <body>
 </html>
