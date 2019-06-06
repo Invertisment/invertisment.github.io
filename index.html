@@ -5,19 +5,65 @@
     <!-- For search engines -->
     <link rel="canonical" href="https://www.mmaciul.lt/">
     <meta charset="UTF-8">
+    <!-- MUI material css framework -->
+    <link href="https://cdn.muicss.com/mui-0.9.41/extra/mui-rem.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.muicss.com/mui-0.9.41/js/mui.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <section class="flex flex--column flex--space-between flex--whole-container">
+    <section class="mm-custom flex flex--column flex--tall">
       <section class="flex flex--column flex--align-center">
         <h2>Martynas Maciulevičius</h2>
         <p class="paragraph">Developer &middot; Blockchain enthusiast</p>
         <div class="flex" id="data-container"></div>
       </section>
-      <section class="flex flex--row flex--align-center margin-xs">
-        <a href="http://vanilla-js.com/" target="_blank">
-          <img src="img/vanillajs.png"/>
+      <div class="flex flex--align-end flex--align-bottom arrow">
+        <a href="#apps">
+          <button class="mui-btn mui-btn--fab">
+            ↓
+          </button>
         </a>
-      </section>
+      </div>
+    </section>
+
+    <div class="mui-container mui-panel" id="apps">
+      <h1>Apps</h1>
+      <div class="mui-row">
+        <div class="mui-col-md-6">
+          <div class="mui-container mui-panel">
+            <h2>
+              <a href="https://mmaciul.lt/honest-producers" target="_blank">
+                EOS block producer browser
+              </a>
+            </h2>
+            <div class="card-img">
+              <img src="img/producers.png"></img>
+            </div>
+          </div>
+        </div>
+
+        <div class="mui-col-md-6">
+          <div class="mui-container mui-panel">
+            <h2>
+              <a href="https://mmaciul.lt/cljs-tetris/" target="_blank">
+                Tetris in Clojure
+              </a>
+            </h2>
+            <div class="card-img">
+              <img src="img/tetris.png"></img>
+            </div>
+          </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+    <section class="flex flex--align-center footer">
+      <a href="http://vanilla-js.com/" target="_blank">
+        <img src="img/vanillajs.png"/>
+      </a>
     </section>
     <script type="text/javascript" src="js/populate-data.js"></script>
   <body>
