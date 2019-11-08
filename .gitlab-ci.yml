@@ -4,7 +4,7 @@ pages:
   script:
   - rm -r public/* || echo -n ""
   - mkdir -p public
-  - find . -maxdepth 1 -not -ipath './.git*' -not -ipath './public*' -not -ipath '.' -exec cp -rt public '{}' ';'
+  - find . -maxdepth 1 -not -ipath './.git*' -not -ipath './public*' -not -ipath '.' -exec cp -r '{}' './public/{}' ';'
   artifacts:
     paths:
     - public
